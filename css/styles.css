@@ -1,0 +1,88 @@
+/* add the hidden overflow to hide the bars that generate the background circles */
+body {
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: rgb(23, 128, 138);
+}
+
+.circle-top {
+    position: absolute;
+    top: -500px;
+    left: -350px;
+    z-index: -10;
+}
+
+.circle-botton {
+    position: absolute;
+    bottom: -400px;
+    right: -350px;
+    z-index: -10;
+}
+
+/* the viewport is 25% from the top because part of the body is hidden by the overflow, but it exists */
+
+.container {
+    width: 350px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    background-color: rgb(249, 250, 255);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* I put it as a block element to be able to center with the classic margin: auto*/
+
+.profile-pic {
+    position: relative;
+    top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -25px;
+    padding: 0px;
+    display: block;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+/* I start to edit my text */
+
+.text {
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+}
+
+.light-text {
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+}
+
+.stats {
+    float: left;
+    width: 33%;
+    margin-top: 30px;
+}
+
+.light-text-small {
+    font-size: 0.7rem;
+}
+
+/* Small line detail  */
+
+.footer {
+    border-top: 1px solid rgb(214, 214, 214);
+}
+
+/* frontend mentor code */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: rgb(62, 82, 163);
+}
